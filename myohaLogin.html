@@ -27,13 +27,18 @@
             margin-bottom: 20px;
         }
 
+        .navbar-text > a{
+            color: inherit;
+            text-decoration: none;
+        }
+
     </style>
 
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -120,9 +125,31 @@
             </label>
             <br />
             <br />
-            <button class="btn btn-lg btn-primary btn-block" type="submit">
+            <br />
+            <button class="btn btn-lg btn-primary  btn-success col-md-3" type="submit">
                 Sign up</button>
         </form>
+    </div>
+</div>
+
+<div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    <div class="container">
+        <div class="navbar-text pull-left">
+            <p>Myoha© 2015</p>
+        </div>
+        <div class="navbar-text">
+            <a class="col-md-1">About </a>
+            <a class="col-md-1  col-md-offset-1">Privacy</a>
+            <a class="col-md-1  col-md-offset-1">Cookies</a>
+            <a class="col-md-1  col-md-offset-1">Terms</a>
+            <a class="col-md-1  col-md-offset-1">Help</a>
+        </div>
+
+         <div class="navbar-text pull-right">
+             <a href="#"><i class="fa fa-facebook-square fa-2x col-md-1"></i></a>
+             <a href="#"><i class="fa fa-twitter-square fa-2x col-md-1  col-md-offset-1"></i></a>
+             <a href="#"><i class="fa fa-google-plus-square fa-2x col-md-1  col-md-offset-1"></i></a>
+         </div>
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
