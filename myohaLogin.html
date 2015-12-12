@@ -5,6 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <style type="text/css">
+        .break{
+            clear:both;
+        }
+
+        .brandStyle{
+            padding-top:5px;
+            padding-left:20px;
+            font-size: 1.5em;
+            position:absolute;
+        }
+
+        .signUp {
+            padding-top:30px;
+            float:middle;
+        }
+
+        .form-control{
+            margin-bottom: 20px;
+        }
+
+    </style>
+
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
@@ -18,7 +42,7 @@
      <![endif]-->
 </head>
 <body>
-<div class="navbar navbar-default">
+<div class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,20 +50,79 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand">myoha</a>
+            <a class="navbar-brand "><text class="brandStyle">myoha</text></a>
         </div>
 
         <div class="collapse navbar-collapse">
             <form class="navbar-form navbar-right">
                 <div class="form-group">
-                    <input type="email" placeholder="Email" class="form-control">
+                    <input type="email" placeholder="Email" class="form-control" style="margin-bottom:0;">
                 </div>
                 <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
+                    <input type="password" placeholder="Password" class="form-control" style="margin-bottom:0;">
                 </div>
                 <button type="submit" class="btn btn-success">Log In</button>
+                <div class="break">	</div>
+                <div class="checkbox form-group">
+                    <label class="text-muted"><input type="checkbox"> Remember me</label>
+                </div>
+                <div class="form-group" align="right">
+                    <a href="#" class="text-muted text-nowrap" style="padding-left:67px;">Forgot Password?</a>
+                </div>
             </form>
         </div>
+    </div>
+</div>
+
+<div class="row signUp">
+    <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-6">
+        <legend><a href="#"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
+        <br/>
+        <form action="#" method="post" class="form" role="form">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                           required autofocus />
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                </div>
+            </div>
+            <input class="form-control" name="youremail" placeholder="Your Email" type="email" />
+            <input class="form-control" name="reenteremail" placeholder="Re-enter Email" type="email" />
+            <input class="form-control" name="password" placeholder="New Password" type="password" />
+            <label for="">
+                Birth Date</label>
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Month">Month</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Day">Day</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Year">Year</option>
+                    </select>
+                </div>
+            </div>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                Female
+            </label>
+            <br />
+            <br />
+            <button class="btn btn-lg btn-primary btn-block" type="submit">
+                Sign up</button>
+        </form>
     </div>
 </div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
