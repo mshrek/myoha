@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/default.css" rel="stylesheet" type="text/css">
-    <link href="css/new_article.css" rel="stylesheet" type="text/css">
+    <link href="css/article.css" rel="stylesheet" type="text/css">
     <link href="vendor/chosen_v1.4.2/chosen.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/summernote-master/dist/summernote.css" rel="stylesheet" type="text/css">
     <link href="vendor/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -133,48 +133,63 @@
 
 
             <div id="content">
-                <header>
-                   <h2 class="page_title"> Create new article</h2>
+                <header class="clearfix">
+                    <h2 class="page_title pull-left">All content</h2>
+                    <button type="button" class="btn btn-xs btn-primary pull-right">Create new article</button>
                 </header>
 
                 <div class="content-inner">
-                    <div class="form-wrapper">
-                        <form>
-                            <div class="form-group">
-                                <label class="sr-only">Title</label>
-                                <input type="text" class="form-control" id="title" placeholder="Title">
+                    <div class="row search-row">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                              <input type="text" class="form-control search-field" id="search" placeholder="Search">
+                                 <span class="input-group-btn">
+                                     <button type="button" class="btn btn-primary go">Go!</button>
+                                 </span>
                             </div>
-
-                            <div class="form-group">
-                                <label class="sr-only">Tags</label>
-                                <select data-placeholder="Select tags" multiple name="tags" class="form-control chosen-select">
-                                    <option></option>
-                                    <option>html</option>
-                                    <option>css</option>
-                                    <option>coding</option>
-                                    <option>programming</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="sr-only">Article</label>
-                                <textarea class="form-control summernote" placeholder="Article" name="article"></textarea>
-                            </div>
-
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox">publish article when I click on save
-                                </label>
-                            </div>
-
-                            <div class="clearfix">
-                                <button type="submit" class="btn btn-primary pull-right">Save/Publish</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
+
+                    <div class="row article-row">
+                        <div class="col-xs-2 col-sm-1 col-md-1 status-padding">
+                            <span class="label label-success label-lg label-xs label-sm">Active</span>
+                        </div>
+                        <div class="col-xs-10 col-sm-6 col-md-8 article-title">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                            <small>Created 15th March</small>
+                        </div>
+                        <div class="col-xs-10 col-sm-5 col-md-3 col-xs-offset-2 col-md-offset-0 col-lg-offset-0">
+                            <div class="article-actions">
+                                <a class="btn btn-xs btn-default" href="#" role="button">
+                                    <span class="glyphicon glyphicon-folder-open" aria-hidden="true">&nbsp;View</span>
+                                </a>
+                                <a class="btn btn-xs btn-default" href="#" role="button">
+                                    <span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;Edit</span>
+                                </a>
+                                <a class="btn btn-xs btn-default" href="#" role="button">
+                                    <span class="glyphicon glyphicon-remove" aria-hidden="true">&nbsp;Delete</span>
+                                </a>
+                            </div>
+                        </div>
                 </div>
 
             </div>
+            <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav>
+                            <ul class="pagination">
+                                <li><a href="#">&laquo;</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">&raquo;</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
 
             <div class="row">
                 <footer id="admin-footer" class="clearfix">
