@@ -202,7 +202,7 @@ html, body{
 
 #content header{
     border-bottom: 1px #f3f3f4 solid;
-    padding:10px 0px;
+    padding:10px 20px;
 }
 
 .page_title{
@@ -271,4 +271,8 @@ html, body{
 .pagination a{
     color: #1ab394 !important;
 
+}
+
+.rightpadding {
+    margin-right:20px;
 }
